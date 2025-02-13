@@ -1,0 +1,31 @@
+The solution involves adjusting the approach to distribute space equally. Here's one method using `space-around`:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+```
+
+This method ensures that the space between the items is equal regardless of their number. Note that this distributes space around each item rather than between them. Another common solution is to use the `gap` property for better control of spacing.
+
+```css
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+```
+
+This method provides a clean and consistent gap between each element.
