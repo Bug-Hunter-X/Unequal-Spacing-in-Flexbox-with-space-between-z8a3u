@@ -1,0 +1,16 @@
+The following CSS code has a subtle error that can cause unexpected behavior in some browsers:
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+```
+
+This code intends to distribute three `.item` elements evenly within a `.container` element using `flexbox`. However, if there are more than two `.item` elements, the space between them will be unequal due to the nature of `space-between` distribution.
